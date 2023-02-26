@@ -14,24 +14,24 @@ main {
     align-items: center;
   }
   
-  .conteudo-datas {
+  .content-dates {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
   }
   
-  .conteudo-datas label {
+  .content-dates label {
     margin-right: 10px;
   }
   
-  .conteudo-resultado {
+  .content-result {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
   
-  #resultado {
+  #result {
     text-align: center;
   }
