@@ -73,7 +73,12 @@ main {
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 1em;
+}
+
+#calc-end-date:hover {
+  background-color: green;
+  color:aliceblue;
 }
 
 .content-result {
@@ -103,5 +108,9 @@ main {
 
   .content-dates label {
     margin-bottom: 10px;
+  }
+
+  #calc-end-date {
+    margin-top: .8em;
   }
 }
