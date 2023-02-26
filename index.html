@@ -10,25 +10,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Calculadora de dias úteis</h1>
-        <p>OBS: não pula feriados, por enquanto...</p>
-        <p>A contagem inicia a partir do próximo dia útil.</p>
-    </header>
-    <main>
-        <div class="content-dates">
-            <label for="initial-date">Data inicial:</label>
-            <input type="date" id="initial-date">
-
-            <label for="working-days">Dias úteis:</label>
-            <input type="number" id="working-days" min="1">
-
-            <button id="calc-end-date">Calcular</button>
-        </div>
-        <div class="content-result">
-            <p id="result"></p>
-        </div>
-    </main>
+        <header>
+            <h1>Calculadora de dias úteis</h1>
+            <p>OBS: não pula feriados, por enquanto...</p>
+            <p>A contagem inicia a partir do próximo dia útil.</p>
+        </header>
+        <main>
+            <div class="content-dates">
+                    <label for="initial-date">Data inicial:</label>
+                    <input type="date" id="initial-date">
+                
+                    <label for="working-days">Dias úteis:</label>
+                    <input type="number" id="working-days" min="1">  
+                <button id="calc-end-date">Calcular</button>
+            </div>
+            <div class="content-result">
+                <p id="result"></p>
+            </div>
+        </main>
     <script src="./js/index.js" type="module"></script>
 </body>
 
