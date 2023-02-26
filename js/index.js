@@ -1,6 +1,6 @@
 function onlyWorkingDay(date){
     const dayWeek = date.getDay();
-    console.log(dayWeek)
+    return dayWeek != 0 && dayWeek != 6;  // retorna true ou false
 }
 
 let date = new Date();
