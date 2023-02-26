@@ -1,17 +1,15 @@
-function onlyWorkingDay(date){
-    const dayWeek = date.getDay();
-    return dayWeek != 0 && dayWeek != 6;  // retorna true ou false
-}
+import { calculateEndDate } from "./calculateEndDate.js";
 
-let date = new Date();
-
-onlyWorkingDay(date)
-
-const calcBotton = document.getElementById('calc-end-date');
-calcBotton.addEventListener('click',()=>{
+const calcButton = document.getElementById('calc-end-date');
+calcButton.addEventListener('click',()=>{
     const initialDateInput = document.getElementById('initial-date');
     const workingDaysInput = document.getElementById('working-days');
     const resultInput = document.getElementById('result');
 
-    console.log(`test: ${initialDateInput}, ${workingDaysInput}, ${resultInput}`); //ok
+    const initialDate = new Date(initialDateInput.value);
+    const workingDays = Number(workingDaysInput.value);
+
+    const finalDate = calculateEndDate(initialDate, workingDays); 
+
+    resultInput.textContent = `A data correspondente a ${workingDays} dia(s) útil(úteis) é: ${finalDate.toLocaleDateString()}`;
 })
